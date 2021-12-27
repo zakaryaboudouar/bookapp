@@ -5,30 +5,72 @@
     </li>
   </ul>
 </nav>
-
-<ng-container *ngIf="(books$ | async) as result" [ngSwitch]="result.dataState">
-  <ng-container *ngSwitchCase="0">
-    Loding .....
-  </ng-container>
-  <ng-container *ngSwitchCase="1">
-    <table class="table">
-      <thead>
-      <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Author</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr *ngFor="let book of result.data">
-        <td>{{book.name}}</td>
-        <td>{{book.author}}</td>
-      </tr>
-      </tbody>
-    </table>
-  </ng-container>
-  <ng-container *ngSwitchCase="2">
-    <div class="alert-danger">
-      {{result.errorMessage}}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-6">
+      <ng-container *ngIf="(books$ | async) as result" [ngSwitch]="result.dataState">
+        <ng-container *ngSwitchCase="0">
+          Loding .....
+        </ng-container>
+        <ng-container *ngSwitchCase="1">
+          <table class="table">
+            <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Author</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let book of result.data">
+              <td>{{book.name}}</td>
+              <td>{{book.author}}</td>
+              <td>
+                <button name="update" class="btn btn-outline-info" (click)="selectToUpdate(book)">Select</button>
+              </td>
+              <td>
+                <button name="delete" class="btn btn-danger" (click)="onDelete(book.id)">Delete</button>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </ng-container>
+        <ng-container *ngSwitchCase="2">
+          <div class="alert-danger">
+            {{result.errorMessage}}
+          </div>
+        </ng-container>
+      </ng-container>
     </div>
-  </ng-container>
-</ng-container>
+    <div class="col-sm-3 col-md-6">
+      <ng-container *ngIf="selected">
+        <table class="table">
+          <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Author</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngIf="book">
+            <td>
+              <div class="form-group">
+                <input type="text" class="form-control" id="bookName" [(ngModel)]="book.name" value="{{book.name}}">
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <input type="text" class="form-control" id="bookAuthor" [(ngModel)]="book.author" value="{{book.author}}">
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <button name="delete" class="btn btn-success" (click)="onUpdate(book)">Update</button>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </ng-container>
+    </div>
+  </div>
+</div>

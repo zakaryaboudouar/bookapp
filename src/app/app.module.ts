@@ -8,19 +8,25 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { LoginComponent } from './components/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import {RouterModule} from "@angular/router";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { AddBookComponent } from './components/add-book/add-book.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     BookComponent,
     NavBarComponent,
-    LoginComponent
+    LoginComponent,
+    AddBookComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

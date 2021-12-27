@@ -1,105 +1,504 @@
 {
   "books": [
-    {"id":"1","author":"JamesJoyce","name":"ULYSSES"},
-    {"id":"2","author":"F.ScottFitzgerald","name":"THEGREATGATSBY"},
-    {"id":"3","author":"JamesJoyce","name":"APORTRAITOFTHEARTISTASAYOUNGMAN"},
-    {"id":"4","author":"VladimirNabokov","name":"LOLITA"},
-    {"id":"5","author":"AldousHuxley","name":"BRAVENEWWORLD"},
-    {"id":"6","author":"WilliamFaulkner","name":"THESOUNDANDTHEFURY"},
-    {"id":"7","author":"JosephHeller","name":"CATCH-22"},
-    {"id":"8","author":"ArthurKoestler","name":"DARKNESSATNOON"},
-    {"id":"9","author":"D.H.Lawrence","name":"SONSANDLOVERS"},
-    {"id":"10","author":"JohnSteinbeck","name":"THEGRAPESOFWRATH"},
-    {"id":"11","author":"MalcolmLowry","name":"UNDERTHEVOLCANO"},
-    {"id":"12","author":"SamuelButler","name":"THEWAYOFALLFLESH"},
-    {"id":"13","author":"GeorgeOrwell","name":"1984"},
-    {"id":"14","author":"RobertGraves","name":"ICLAUDIUS"},
-    {"id":"15","author":"VirginiaWoolf","name":"TOTHELIGHTHOUSE"},
-    {"id":"16","author":"TheodoreDreiser","name":"ANAMERICANTRAGEDY"},
-    {"id":"17","author":"CarsonMcCullers","name":"THEHEARTISALONELYHUNTER"},
-    {"id":"18","author":"KurtVonnegut","name":"SLAUGHTERHOUSE-FIVE"},
-    {"id":"19","author":"RalphEllison","name":"INVISIBLEMAN"},
-    {"id":"20","author":"RichardWright","name":"NATIVESON"},
-    {"id":"21","author":"SaulBellow","name":"HENDERSONTHERAINKING"},
-    {"id":"22","author":"JohnO’Hara","name":"APPOINTMENTINSAMARRA"},
-    {"id":"23","author":"JohnDosPassos","name":"U.S.A.(trilogy)"},
-    {"id":"24","author":"E.M.Forster","name":"APASSAGETOINDIA"},
-    {"id":"25","author":"HenryJames","name":"THEWINGSOFTHEDOVE"},
-    {"id":"26","author":"HenryJames","name":"THEAMBASSADORS"},
-    {"id":"27","author":"F.ScottFitzgerald","name":"TENDERISTHENIGHT"},
-    {"id":"28","author":"JamesT.Farrell","name":"THESTUDSLONIGANTRILOGY"},
-    {"id":"29","author":"FordMadoxFord","name":"THEGOODSOLDIER"},
-    {"id":"30","author":"GeorgeOrwell","name":"ANIMALFARM"},
-    {"id":"31","author":"HenryJames","name":"THEGOLDENBOWL"},
-    {"id":"32","author":"TheodoreDreiser","name":"SISTERCARRIE"},
-    {"id":"33","author":"EvelynWaugh","name":"AHANDFULOFDUST"},
-    {"id":"34","author":"WilliamFaulkner","name":"ASILAYDYING"},
-    {"id":"35","author":"RobertPennWarren","name":"ALLTHEKING’SMEN"},
-    {"id":"36","author":"ThorntonWilder","name":"THEBRIDGEOFSANLUISREY"},
-    {"id":"37","author":"E.M.Forster","name":"HOWARDSEND"},
-    {"id":"38","author":"JamesBaldwin","name":"GOTELLITONTHEMOUNTAIN"},
-    {"id":"39","author":"GrahamGreene","name":"THEHEARTOFTHEMATTER"},
-    {"id":"40","author":"WilliamGolding","name":"LORDOFTHEFLIES"},
-    {"id":"41","author":"JamesDickey","name":"DELIVERANCE"},
-    {"id":"42","author":"AnthonyPowell","name":"ADANCETOTHEMUSICOFTIME(series)"},
-    {"id":"43","author":"AldousHuxley","name":"POINTCOUNTERPOINT"},
-    {"id":"44","author":"ErnestHemingway","name":"THESUNALSORISES"},
-    {"id":"45","author":"JosephConrad","name":"THESECRETAGENT"},
-    {"id":"46","author":"JosephConrad","name":"NOSTROMO"},
-    {"id":"47","author":"D.H.Lawrence","name":"THERAINBOW"},
-    {"id":"48","author":"D.H.Lawrence","name":"WOMENINLOVE"},
-    {"id":"49","author":"HenryMiller","name":"TROPICOFCANCER"},
-    {"id":"50","author":"NormanMailer","name":"THENAKEDANDTHEDEAD"},
-    {"id":"51","author":"PhilipRoth","name":"PORTNOY’SCOMPLAINT"},
-    {"id":"52","author":"VladimirNabokov","name":"PALEFIRE"},
-    {"id":"53","author":"WilliamFaulkner","name":"LIGHTINAUGUST"},
-    {"id":"54","author":"JackKerouac","name":"ONTHEROAD"},
-    {"id":"55","author":"DashiellHammett","name":"THEMALTESEFALCON"},
-    {"id":"56","author":"FordMadoxFord","name":"PARADE’SEND"},
-    {"id":"57","author":"EdithWharton","name":"THEAGEOFINNOCENCE"},
-    {"id":"58","author":"MaxBeerbohm","name":"ZULEIKADOBSON"},
-    {"id":"59","author":"WalkerPercy","name":"THEMOVIEGOER"},
-    {"id":"60","author":"WillaCather","name":"DEATHCOMESFORTHEARCHBISHOP"},
-    {"id":"61","author":"JamesJones","name":"FROMHERETOETERNITY"},
-    {"id":"62","author":"JohnCheever","name":"THEWAPSHOTCHRONICLES"},
-    {"id":"63","author":"J.D.Salinger","name":"THECATCHERINTHERYE"},
-    {"id":"64","author":"AnthonyBurgess","name":"ACLOCKWORKORANGE"},
-    {"id":"65","author":"W.SomersetMaugham","name":"OFHUMANBONDAGE"},
-    {"id":"66","author":"JosephConrad","name":"HEARTOFDARKNESS"},
-    {"id":"67","author":"SinclairLewis","name":"MAINSTREET"},
-    {"id":"68","author":"EdithWharton","name":"THEHOUSEOFMIRTH"},
-    {"id":"69","author":"LawrenceDurrell","name":"THEALEXANDRIAQUARTET"},
-    {"id":"70","author":"RichardHughes","name":"AHIGHWINDINJAMAICA"},
-    {"id":"71","author":"V.S.Naipaul","name":"AHOUSEFORMRBISWAS"},
-    {"id":"72","author":"NathanaelWest","name":"THEDAYOFTHELOCUST"},
-    {"id":"73","author":"ErnestHemingway","name":"AFAREWELLTOARMS"},
-    {"id":"74","author":"EvelynWaugh","name":"SCOOP"},
-    {"id":"75","author":"MurielSpark","name":"THEPRIMEOFMISSJEANBRODIE"},
-    {"id":"76","author":"JamesJoyce","name":"FINNEGANSWAKE"},
-    {"id":"77","author":"RudyardKipling","name":"KIM"},
-    {"id":"78","author":"E.M.Forster","name":"AROOMWITHAVIEW"},
-    {"id":"79","author":"EvelynWaugh","name":"BRIDESHEADREVISITED"},
-    {"id":"80","author":"SaulBellow","name":"THEADVENTURESOFAUGIEMARCH"},
-    {"id":"81","author":"WallaceStegner","name":"ANGLEOFREPOSE"},
-    {"id":"82","author":"V.S.Naipaul","name":"ABENDINTHERIVER"},
-    {"id":"83","author":"ElizabethBowen","name":"THEDEATHOFTHEHEART"},
-    {"id":"84","author":"JosephConrad","name":"LORDJIM"},
-    {"id":"85","author":"E.L.Doctorow","name":"RAGTIME"},
-    {"id":"86","author":"ArnoldBennett","name":"THEOLDWIVES’TALE"},
-    {"id":"87","author":"JackLondon","name":"THECALLOFTHEWILD"},
-    {"id":"88","author":"HenryGreen","name":"LOVING"},
-    {"id":"89","author":"SalmanRushdie","name":"MIDNIGHT’SCHILDREN"},
-    {"id":"90","author":"ErskineCaldwell","name":"TOBACCOROAD"},
-    {"id":"91","author":"WilliamKennedy","name":"IRONWEED"},
-    {"id":"92","author":"JohnFowles","name":"THEMAGUS"},
-    {"id":"93","author":"JeanRhys","name":"WIDESARGASSOSEA"},
-    {"id":"94","author":"IrisMurdoch","name":"UNDERTHENET"},
-    {"id":"95","author":"WilliamStyron","name":"SOPHIE’SCHOICE"},
-    {"id":"96","author":"PaulBowles","name":"THESHELTERINGSKY"},
-    {"id":"97","author":"JamesM.Cain","name":"THEPOSTMANALWAYSRINGSTWICE"},
-    {"id":"98","author":"J.P.Donleavy","name":"THEGINGERMAN"},
-    {"id":"99","author":"BoothTarkington","name":"THEMAGNIFICENTAMBERSONS"}
+    {
+      "id": "1",
+      "author": "James",
+      "name": "ULY"
+    },
+    {
+      "id": "2",
+      "author": "F.ScottFitzgerald",
+      "name": "THEGREATGATSBY"
+    },
+    {
+      "id": "3",
+      "author": "JamesJoyce",
+      "name": "APORTRAITOFTHEARTISTASAYOUNGMAN"
+    },
+    {
+      "id": "4",
+      "author": "VladimirNabokov",
+      "name": "LOLITA"
+    },
+    {
+      "id": "5",
+      "author": "AldousHuxley",
+      "name": "BRAVENEWWORLD"
+    },
+    {
+      "id": "6",
+      "author": "WilliamFaulkner",
+      "name": "THESOUNDANDTHEFURY"
+    },
+    {
+      "id": "7",
+      "author": "JosephHeller",
+      "name": "CATCH-22"
+    },
+    {
+      "id": "8",
+      "author": "ArthurKoestler",
+      "name": "DARKNESSATNOON"
+    },
+    {
+      "id": "9",
+      "author": "D.H.Lawrence",
+      "name": "SONSANDLOVERS"
+    },
+    {
+      "id": "10",
+      "author": "JohnSteinbeck",
+      "name": "THEGRAPESOFWRATH"
+    },
+    {
+      "id": "11",
+      "author": "MalcolmLowry",
+      "name": "UNDERTHEVOLCANO"
+    },
+    {
+      "id": "12",
+      "author": "SamuelButler",
+      "name": "THEWAYOFALLFLESH"
+    },
+    {
+      "id": "13",
+      "author": "GeorgeOrwell",
+      "name": "1984"
+    },
+    {
+      "id": "14",
+      "author": "RobertGraves",
+      "name": "ICLAUDIUS"
+    },
+    {
+      "id": "15",
+      "author": "VirginiaWoolf",
+      "name": "TOTHELIGHTHOUSE"
+    },
+    {
+      "id": "16",
+      "author": "TheodoreDreiser",
+      "name": "ANAMERICANTRAGEDY"
+    },
+    {
+      "id": "17",
+      "author": "CarsonMcCullers",
+      "name": "THEHEARTISALONELYHUNTER"
+    },
+    {
+      "id": "18",
+      "author": "KurtVonnegut",
+      "name": "SLAUGHTERHOUSE-FIVE"
+    },
+    {
+      "id": "19",
+      "author": "RalphEllison",
+      "name": "INVISIBLEMAN"
+    },
+    {
+      "id": "20",
+      "author": "RichardWright",
+      "name": "NATIVESON"
+    },
+    {
+      "id": "21",
+      "author": "SaulBellow",
+      "name": "HENDERSONTHERAINKING"
+    },
+    {
+      "id": "22",
+      "author": "JohnO’Hara",
+      "name": "APPOINTMENTINSAMARRA"
+    },
+    {
+      "id": "23",
+      "author": "JohnDosPassos",
+      "name": "U.S.A.(trilogy)"
+    },
+    {
+      "id": "24",
+      "author": "E.M.Forster",
+      "name": "APASSAGETOINDIA"
+    },
+    {
+      "id": "25",
+      "author": "HenryJames",
+      "name": "THEWINGSOFTHEDOVE"
+    },
+    {
+      "id": "26",
+      "author": "HenryJames",
+      "name": "THEAMBASSADORS"
+    },
+    {
+      "id": "27",
+      "author": "F.ScottFitzgerald",
+      "name": "TENDERISTHENIGHT"
+    },
+    {
+      "id": "28",
+      "author": "JamesT.Farrell",
+      "name": "THESTUDSLONIGANTRILOGY"
+    },
+    {
+      "id": "29",
+      "author": "FordMadoxFord",
+      "name": "THEGOODSOLDIER"
+    },
+    {
+      "id": "30",
+      "author": "GeorgeOrwell",
+      "name": "ANIMALFARM"
+    },
+    {
+      "id": "31",
+      "author": "HenryJames",
+      "name": "THEGOLDENBOWL"
+    },
+    {
+      "id": "32",
+      "author": "TheodoreDreiser",
+      "name": "SISTERCARRIE"
+    },
+    {
+      "id": "33",
+      "author": "EvelynWaugh",
+      "name": "AHANDFULOFDUST"
+    },
+    {
+      "id": "34",
+      "author": "WilliamFaulkner",
+      "name": "ASILAYDYING"
+    },
+    {
+      "id": "35",
+      "author": "RobertPennWarren",
+      "name": "ALLTHEKING’SMEN"
+    },
+    {
+      "id": "36",
+      "author": "ThorntonWilder",
+      "name": "THEBRIDGEOFSANLUISREY"
+    },
+    {
+      "id": "37",
+      "author": "E.M.Forster",
+      "name": "HOWARDSEND"
+    },
+    {
+      "id": "38",
+      "author": "JamesBaldwin",
+      "name": "GOTELLITONTHEMOUNTAIN"
+    },
+    {
+      "id": "39",
+      "author": "GrahamGreene",
+      "name": "THEHEARTOFTHEMATTER"
+    },
+    {
+      "id": "40",
+      "author": "WilliamGolding",
+      "name": "LORDOFTHEFLIES"
+    },
+    {
+      "id": "41",
+      "author": "JamesDickey",
+      "name": "DELIVERANCE"
+    },
+    {
+      "id": "42",
+      "author": "AnthonyPowell",
+      "name": "ADANCETOTHEMUSICOFTIME(series)"
+    },
+    {
+      "id": "43",
+      "author": "AldousHuxley",
+      "name": "POINTCOUNTERPOINT"
+    },
+    {
+      "id": "44",
+      "author": "ErnestHemingway",
+      "name": "THESUNALSORISES"
+    },
+    {
+      "id": "45",
+      "author": "JosephConrad",
+      "name": "THESECRETAGENT"
+    },
+    {
+      "id": "46",
+      "author": "JosephConrad",
+      "name": "NOSTROMO"
+    },
+    {
+      "id": "47",
+      "author": "D.H.Lawrence",
+      "name": "THERAINBOW"
+    },
+    {
+      "id": "48",
+      "author": "D.H.Lawrence",
+      "name": "WOMENINLOVE"
+    },
+    {
+      "id": "49",
+      "author": "HenryMiller",
+      "name": "TROPICOFCANCER"
+    },
+    {
+      "id": "50",
+      "author": "NormanMailer",
+      "name": "THENAKEDANDTHEDEAD"
+    },
+    {
+      "id": "51",
+      "author": "PhilipRoth",
+      "name": "PORTNOY’SCOMPLAINT"
+    },
+    {
+      "id": "52",
+      "author": "VladimirNabokov",
+      "name": "PALEFIRE"
+    },
+    {
+      "id": "53",
+      "author": "WilliamFaulkner",
+      "name": "LIGHTINAUGUST"
+    },
+    {
+      "id": "54",
+      "author": "JackKerouac",
+      "name": "ONTHEROAD"
+    },
+    {
+      "id": "55",
+      "author": "DashiellHammett",
+      "name": "THEMALTESEFALCON"
+    },
+    {
+      "id": "56",
+      "author": "FordMadoxFord",
+      "name": "PARADE’SEND"
+    },
+    {
+      "id": "57",
+      "author": "EdithWharton",
+      "name": "THEAGEOFINNOCENCE"
+    },
+    {
+      "id": "58",
+      "author": "MaxBeerbohm",
+      "name": "ZULEIKADOBSON"
+    },
+    {
+      "id": "59",
+      "author": "WalkerPercy",
+      "name": "THEMOVIEGOER"
+    },
+    {
+      "id": "60",
+      "author": "WillaCather",
+      "name": "DEATHCOMESFORTHEARCHBISHOP"
+    },
+    {
+      "id": "61",
+      "author": "JamesJones",
+      "name": "FROMHERETOETERNITY"
+    },
+    {
+      "id": "62",
+      "author": "JohnCheever",
+      "name": "THEWAPSHOTCHRONICLES"
+    },
+    {
+      "id": "63",
+      "author": "J.D.Salinger",
+      "name": "THECATCHERINTHERYE"
+    },
+    {
+      "id": "64",
+      "author": "AnthonyBurgess",
+      "name": "ACLOCKWORKORANGE"
+    },
+    {
+      "id": "65",
+      "author": "W.SomersetMaugham",
+      "name": "OFHUMANBONDAGE"
+    },
+    {
+      "id": "66",
+      "author": "JosephConrad",
+      "name": "HEARTOFDARKNESS"
+    },
+    {
+      "id": "67",
+      "author": "SinclairLewis",
+      "name": "MAINSTREET"
+    },
+    {
+      "id": "68",
+      "author": "EdithWharton",
+      "name": "THEHOUSEOFMIRTH"
+    },
+    {
+      "id": "69",
+      "author": "LawrenceDurrell",
+      "name": "THEALEXANDRIAQUARTET"
+    },
+    {
+      "id": "70",
+      "author": "RichardHughes",
+      "name": "AHIGHWINDINJAMAICA"
+    },
+    {
+      "id": "71",
+      "author": "V.S.Naipaul",
+      "name": "AHOUSEFORMRBISWAS"
+    },
+    {
+      "id": "72",
+      "author": "NathanaelWest",
+      "name": "THEDAYOFTHELOCUST"
+    },
+    {
+      "id": "73",
+      "author": "ErnestHemingway",
+      "name": "AFAREWELLTOARMS"
+    },
+    {
+      "id": "74",
+      "author": "EvelynWaugh",
+      "name": "SCOOP"
+    },
+    {
+      "id": "75",
+      "author": "MurielSpark",
+      "name": "THEPRIMEOFMISSJEANBRODIE"
+    },
+    {
+      "id": "76",
+      "author": "JamesJoyce",
+      "name": "FINNEGANSWAKE"
+    },
+    {
+      "id": "77",
+      "author": "RudyardKipling",
+      "name": "KIM"
+    },
+    {
+      "id": "78",
+      "author": "E.M.Forster",
+      "name": "AROOMWITHAVIEW"
+    },
+    {
+      "id": "79",
+      "author": "EvelynWaugh",
+      "name": "BRIDESHEADREVISITED"
+    },
+    {
+      "id": "80",
+      "author": "SaulBellow",
+      "name": "THEADVENTURESOFAUGIEMARCH"
+    },
+    {
+      "id": "81",
+      "author": "WallaceStegner",
+      "name": "ANGLEOFREPOSE"
+    },
+    {
+      "id": "82",
+      "author": "V.S.Naipaul",
+      "name": "ABENDINTHERIVER"
+    },
+    {
+      "id": "83",
+      "author": "ElizabethBowen",
+      "name": "THEDEATHOFTHEHEART"
+    },
+    {
+      "id": "84",
+      "author": "JosephConrad",
+      "name": "LORDJIM"
+    },
+    {
+      "id": "85",
+      "author": "E.L.Doctorow",
+      "name": "RAGTIME"
+    },
+    {
+      "id": "86",
+      "author": "ArnoldBennett",
+      "name": "THEOLDWIVES’TALE"
+    },
+    {
+      "id": "87",
+      "author": "JackLondon",
+      "name": "THECALLOFTHEWILD"
+    },
+    {
+      "id": "88",
+      "author": "HenryGreen",
+      "name": "LOVING"
+    },
+    {
+      "id": "89",
+      "author": "SalmanRushdie",
+      "name": "MIDNIGHT’SCHILDREN"
+    },
+    {
+      "id": "90",
+      "author": "ErskineCaldwell",
+      "name": "TOBACCOROAD"
+    },
+    {
+      "id": "91",
+      "author": "WilliamKennedy",
+      "name": "IRONWEED"
+    },
+    {
+      "id": "92",
+      "author": "JohnFowles",
+      "name": "THEMAGUS"
+    },
+    {
+      "id": "93",
+      "author": "JeanRhys",
+      "name": "WIDESARGASSOSEA"
+    },
+    {
+      "id": "94",
+      "author": "IrisMurdoch",
+      "name": "UNDERTHENET"
+    },
+    {
+      "id": "95",
+      "author": "WilliamStyron",
+      "name": "SOPHIE’SCHOICE"
+    },
+    {
+      "id": "96",
+      "author": "PaulBowles",
+      "name": "THESHELTERINGSKY"
+    },
+    {
+      "id": "97",
+      "author": "JamesM.Cain",
+      "name": "THEPOSTMANALWAYSRINGSTWICE"
+    },
+    {
+      "id": "98",
+      "author": "J.P.Donleavy",
+      "name": "THEGINGERMAN"
+    },
+    {
+      "id": "99",
+      "author": "BoothTarkington",
+      "name": "THEMAGNIFICENTAMBERSONS"
+    },
+    {
+      "name": "fgthzjkiujzhgtkkkjhgzaka",
+      "author": "zakagthzjrya",
+      "id": "xg_R5IW"
+    }
   ]
-
-
 }
