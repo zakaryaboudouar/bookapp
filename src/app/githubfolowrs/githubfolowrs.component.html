@@ -1,0 +1,9 @@
+<div [(ngModel)]="data" class="container">
+    <ul class="list-group" *ngFor="let item of data">
+        <li class="list-group-item"><img [src]="item.avatar_url" alt="img"></li>
+        <li class="list-group-item">{{item.login}}</li>
+        <li class="list-group-item">{{item.url}}</li>
+      </ul>
+
+      <h2>{{data.length}}</h2>
+</div>
