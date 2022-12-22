@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {APP_INITIALIZER, NgModule} from '@angular/core';
+import { BrowserModule, Title } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BookComponent } from './components/book/book.component';
@@ -10,6 +10,27 @@ import { AppRoutingModule } from './app-routing.module';
 import {RouterModule} from "@angular/router";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { AddBookComponent } from './components/add-book/add-book.component';
+import { PostsComponent } from './posts/posts.component';
+import { GithubfolowrsComponent } from './githubfolowrs/githubfolowrs.component';
+import { GithubfolowrsService } from './services/githubfolowrs.service';
+import { BookService } from './services/book.service';
+import {KeycloakAngularModule, KeycloakService} from "keycloak-angular";
+
+function initializeKeycloak(keycloak: KeycloakService) {
+  return () =>
+    keycloak.init({
+      config: {
+        url: 'http://localhost:8080' + '/auth',
+        realm: 'FirstRealm',
+        clientId: 'zakarya'
+      },
+      initOptions: {
+        onLoad: 'check-sso',
+        silentCheckSsoRedirectUri:
+          window.location.origin + '/assets/silent-check-sso.html'
+      }
+    });
+}
 
 
 @NgModule({
@@ -18,7 +39,9 @@ import { AddBookComponent } from './components/add-book/add-book.component';
     BookComponent,
     NavBarComponent,
     LoginComponent,
-    AddBookComponent
+    AddBookComponent,
+    PostsComponent,
+    GithubfolowrsComponent
   ],
   imports: [
     BrowserModule,
@@ -26,9 +49,16 @@ import { AddBookComponent } from './components/add-book/add-book.component';
     AppRoutingModule,
     RouterModule,
     FormsModule,
-    ReactiveFormsModule
-  ],
-  providers: [],
+    ReactiveFormsModule,
+    KeycloakAngularModule
+],
+  providers: [ {
+    provide: APP_INITIALIZER,
+    useFactory: initializeKeycloak,
+    multi: true,
+    deps: [KeycloakService]
+  },
+    Title,GithubfolowrsService,BookService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

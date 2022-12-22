@@ -1,2 +1,9 @@
+
 <app-nav-bar></app-nav-bar>
 <router-outlet></router-outlet>
+<p>Select a title to set on the current HTML document:</p>
+  <ul>
+    <li><a (click)="setTitle('Good morning!')">Good morning</a>.</li>
+    <li><a (click)="setTitle('Good afternoon!')">Good afternoon</a>.</li>
+    <li><a (click)="setTitle('Good evening!')">Good evening</a>.</li>
+  </ul>

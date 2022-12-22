@@ -5,7 +5,19 @@
 export const environment = {
   production: false,
   apiBaseUrl:'http://localhost:8080',
-  host:'http://localhost:3000'
+  host:'http://localhost:3000',
+  apiGithub:' https://api.github.com/users/IDBRAHIMDEV/followers',
+  keycloak: {
+    // Url of the Identity Provider
+    issuer: 'http://localhost:8080/auth/',
+
+    // Realm
+    realm: 'tasks',
+
+    // The SPA's id.
+    // The SPA is registerd with this id at the auth-serverß
+    clientId: 'tasks-ui',
+  }
 };
 
 /*

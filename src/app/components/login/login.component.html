@@ -1,16 +1,65 @@
-<div class="wrapper fadeInDown">
-  <div id="formContent">
-    <!-- Login Form -->
-    <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-      <input type="submit" class="fadeIn fourth" value="Log In">
-    </form>
+<div class="container">
 
-    <!-- Remind Passowrd -->
-    <div id="formFooter">
-      <a class="underlineHover" href="#">Forgot Password?</a>
+<div class="register-form">
+  <form *ngIf="loginFormGroup" [formGroup]="loginFormGroup" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="fullName">Full Name</label>
+      <input type="text" formControlName="fullName" id="fullName"
+             class="form-control">
+
+        <div class="alert alet-danger">
+          Full Name is required
+        </div>
+
     </div>
 
-  </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="text"
+        formControlName="email"
+        class="form-control" id="email">
+
+    </div>
+
+    <div class="form-group">
+      <label>Password</label>
+      <input
+        type="password"
+        formControlName="password"
+        class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label>Confirm Password</label>
+      <input
+        type="password"
+        formControlName="confirmPassword"
+        class="form-control">
+    </div>
+
+    <div class="form-group form-check">
+      <input
+        type="checkbox"
+        formControlName="acceptTerms"
+        class="form-check-input"
+      >
+      <label class="form-check-label">I have read and agree to the Terms</label>
+      <div class="invalid-feedback">
+        Accept Terms is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Register</button>
+      <button
+        type="button"
+        (click)="onReset()"
+        class="btn btn-warning float-right">
+        Reset
+      </button>
+    </div>
+  </form>
+</div>
 </div>
